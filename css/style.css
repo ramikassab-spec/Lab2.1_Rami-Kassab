@@ -113,4 +113,59 @@ nav a:hover {
   .hero h1 {
     font-size: clamp(2.5rem, 5vw, 4rem);
   }
+
+  /* Bildgalleriets innehåll och bredd */
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 5%;
+}
+
+/* Rubriken tar hela galleriets bredd */
+.gallery h1 {
+  grid-column: 1 / -1;
+}
+
+/*
+  Varje figure blir en kolumn i galleriet.
+  display: grid skapar ett rutnät för innehållet.
+  På mobil visas en bild per rad.
+*/
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Tar bort webbläsarens standardmarginal runt figure */
+.gallery figure {
+  margin: 0;
+  background: #ffffff;
+}
+
+/* Bilden fyller sin kolumn och behåller proportionerna */
+.gallery figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Bildtexten under varje bild */
+.gallery figcaption {
+  padding: 1rem;
+}
+
+/* Två bildkolumner från 650 px bred skärm */
+@media (min-width: 650px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tre bildkolumner från 900 px bred skärm */
+@media (min-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 }
