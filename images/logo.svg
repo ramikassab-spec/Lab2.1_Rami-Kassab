@@ -1,0 +1,18 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 90px;fill: #263d32;font-weight: 400;font-family: "OpenSansRoman-Bold", "Open Sans" } 
+		.s1 { fill: #263d32 } 
+		.s2 { fill: #a8b9a2 } 
+	</style>
+	<text id="VISUELL" transform="translate(230,172)">
+		<tspan x="0" y="0" class="t0">VISUELL</tspan><tspan  y="0" class="t0">
+</tspan>
+	</text>
+	<text id="VISUELL copy" transform="translate(230,172)">
+		<tspan x="0" y="0" class="t0">VISUELL</tspan><tspan  y="0" class="t0">
+</tspan>
+	</text>
+	<path id="Shape 1" fill-rule="evenodd" class="s1" d="m174.5 180c-20.74 0-37.5-16.76-37.5-37.5 0-20.74 16.76-37.5 37.5-37.5 20.74 0 37.5 16.76 37.5 37.5 0 20.74-16.76 37.5-37.5 37.5z"/>
+	<path id="Shape 2 copy" fill-rule="evenodd" class="s2" d="m174.5 160c-9.68 0-17.5-7.82-17.5-17.5 0-9.68 7.82-17.5 17.5-17.5 9.68 0 17.5 7.82 17.5 17.5 0 9.68-7.82 17.5-17.5 17.5z"/>
+</svg>
