@@ -127,6 +127,82 @@ nav a[aria-current="page"] {
   background: #426b50;
 }
 
+/* Förhandsvisning av de tre redigerade bilderna på startsidan */
+.series-preview {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 5%;
+}
+
+/* Rubrik och introduktion i bildserie-sektionen */
+.series-preview > h2,
+.series-preview > p {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+/* Mer luft under rubriken */
+.series-preview > h2 {
+  margin-top: 0;
+}
+
+/*
+  Ett responsivt grid.
+  Korten är minst 250 px breda och placeras automatiskt
+  på fler kolumner när skärmens bredd tillåter det.
+*/
+.series-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Kort för varje redigerad bild */
+.series-card {
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(31, 41, 51, 0.12);
+}
+
+/* Bilderna får samma visuella form i korten */
+.series-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Kortens rubrik, text och länk */
+.series-card h3,
+.series-card p,
+.series-card a {
+  margin-right: 1.25rem;
+  margin-left: 1.25rem;
+}
+
+/* Rubrikens avstånd */
+.series-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Textens radavstånd */
+.series-card p {
+  line-height: 1.6;
+}
+
+/* Länken visas som en knapp */
+.series-card a {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  padding: 0.65rem 0.9rem;
+  color: #ffffff;
+  text-decoration: none;
+  background: #426b50;
+}
+
 /* Sidfotens utseende */
 .site-footer {
   padding: 1.5rem 5%;
