@@ -246,6 +246,19 @@ nav a[aria-current="page"] {
   margin-top: 0;
 }
 
+/* Bättre radavstånd i presentationstexten */
+.about-content p {
+  line-height: 1.7;
+}
+
+/* Underrubriken som förklarar tanken bakom bildredigeringen */
+.about-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #426b50;
+  font-size: 1.4rem;
+}
+
 /* Liten introduktionstext ovanför rubriken på Om mig-sidan */
 .section-label {
   margin: 0 0 0.5rem;
