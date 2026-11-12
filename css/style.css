@@ -246,6 +246,58 @@ nav a[aria-current="page"] {
   margin-top: 0;
 }
 
+/* Liten introduktionstext ovanför rubriken på Om mig-sidan */
+.section-label {
+  margin: 0 0 0.5rem;
+  color: #426b50;
+  font-weight: bold;
+}
+
+/* Sammanfattning av arbetsmomenten */
+.about-work {
+  padding: 4rem 5%;
+  background: #e7efe8;
+}
+
+/* Sektionens huvudrubrik */
+.about-work h2 {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+/*
+  Ett responsivt rutnät för arbetsmomenten.
+  Kort visas automatiskt på flera kolumner när utrymmet räcker.
+*/
+.about-work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Kort med ett arbetsmoment */
+.about-work article {
+  padding: 1.5rem;
+  background: #ffffff;
+  border-top: 4px solid #426b50;
+  box-shadow: 0 4px 12px rgba(31, 41, 51, 0.12);
+}
+
+/* Rubriker i korten */
+.about-work h3 {
+  margin-top: 0;
+  color: #426b50;
+}
+
+/* Texten i korten */
+.about-work p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
 /* Sektion som beskriver bildredigeringen */
 .process {
   padding: 4rem 5%;
