@@ -49,6 +49,14 @@ nav a:hover {
   color: #426b50;
 }
 
+/*Markerar länken till den sida som användaren är på.
+  [aria-current="page"] väljer länken med just det attributet.*/
+nav a[aria-current="page"] {
+  color: #426b50;
+  text-decoration: underline;
+  text-underline-offset: 0.35rem;
+}
+
 /* Behållare för bild och text på startsidan */
 .hero {
   position: relative;
@@ -148,6 +156,7 @@ nav a:hover {
   .hero h1 {
     font-size: clamp(2.5rem, 5vw, 4rem);
   }
+}
 
   /* Bildgalleriets innehåll och bredd */
 .gallery {
@@ -202,5 +211,4 @@ nav a:hover {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
-}
 }
