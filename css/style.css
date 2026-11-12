@@ -401,6 +401,71 @@ nav a[aria-current="page"] {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
  
+}
+  /* Introduktion på Bildredigering-sidan */
+.comparison-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 5% 2rem;
+  text-align: center;
+}
+
+/* Varje före- och efterjämförelse */
+.comparison {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 2rem 5%;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(31, 41, 51, 0.12);
+}
+
+/*
+  Original och redigerad bild placeras automatiskt bredvid varandra
+  när det finns plats. På mobil visas de under varandra.
+*/
+.comparison-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Tar bort standardmarginal runt varje bild */
+.comparison-images figure {
+  margin: 0;
+  background: #f7f7f5;
+}
+
+/* Bilderna fyller sin kolumn utan att förvrängas */
+.comparison-images img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Etikett under varje bild */
+.comparison-images figcaption {
+  padding: 0.75rem;
+  color: #ffffff;
+  text-align: center;
+  background: #1f2933;
+}
+
+/* Texten som förklarar redigeringen */
+.comparison-text {
+  max-width: 800px;
+  margin-top: 1.5rem;
+}
+
+/* Rubrik för varje bildpar */
+.comparison-text h2 {
+  margin-top: 0;
+  color: #426b50;
+}
+
+/* Läsbart radavstånd i beskrivningen */
+.comparison-text p {
+  margin-bottom: 0;
+  line-height: 1.6;
 }
