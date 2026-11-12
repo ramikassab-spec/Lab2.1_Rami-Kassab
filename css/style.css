@@ -9,6 +9,14 @@ body {
   font-family: Arial, sans-serif;
   color: #1f2933;
   background: #f7f7f5;
+    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gör så att innehållet fyller utrymmet före sidfoten */
+main {
+  flex: 1;
 }
 
 /* Sidhuvudet: logga överst och meny under på mobil */
