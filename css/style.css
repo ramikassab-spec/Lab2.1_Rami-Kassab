@@ -13,6 +13,14 @@ body {
   display: flex;
   flex-direction: column;
 }
+/* Serif-typsnitt ger rubrikerna en mer redaktionell och exklusiv känsla */
+main h1,
+main h2,
+main h3 {
+  color: #253b30;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600;
+}
 
 /* Gör så att innehållet fyller utrymmet före sidfoten */
 main {
@@ -25,14 +33,16 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding: 1rem 5%;
+  padding: 1.25rem 6%;
   background: #ffffff;
+  border-bottom: 1px solid #dce5de;
+  box-shadow: 0 2px 14px rgba(31, 41, 51, 0.06);
 }
 
 /* Logotypens storlek */
 .logo img {
   display: block;
-  width: 130px;
+  width: 175px;
   height: auto;
 }
 
@@ -48,8 +58,11 @@ nav ul {
 /* Menylänkarnas utseende */
 nav a {
   color: #1f2933;
+  font-size: 0.85rem;
   font-weight: bold;
+  letter-spacing: 0.04em;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* Färg när muspekaren är över en menylänk */
@@ -96,6 +109,7 @@ nav a[aria-current="page"] {
 .hero h1 {
   margin-top: 0;
   font-size: clamp(2rem, 8vw, 3rem);
+  color: #ffffff;
 }
 
 /* Länken till bildsidan ser ut som en knapp */
@@ -183,6 +197,32 @@ nav a[aria-current="page"] {
 .series-card a {
   margin-right: 1.25rem;
   margin-left: 1.25rem;
+}
+
+/* Knapparna får en mjuk rörelse när besökaren håller musen över dem */
+.hero-content a,
+.intro a,
+.series-card a {
+  border-radius: 2px;
+  box-shadow: 0 4px 10px rgba(31, 41, 51, 0.18);
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* Knapparna lyfts lätt vid hovring */
+.hero-content a:hover,
+.intro a:hover,
+.series-card a:hover {
+  background: #2e5038;
+  box-shadow: 0 6px 16px rgba(31, 41, 51, 0.24);
+  transform: translateY(-2px);
+}
+
+/* Samma mjukt rundade form används för sidans informationskort */
+.series-card,
+.process-card,
+.about-work article,
+.comparison {
+  border-radius: 0.5rem;
 }
 
 /* Rubrikens avstånd */
@@ -386,6 +426,16 @@ nav a[aria-current="page"] {
     max-width: 520px;
     padding: 2rem;
   }
+
+  /* Liten etikett som ger hero-delen en mer redaktionell känsla */
+.hero-label {
+  margin: 0 0 0.75rem;
+  color: #b7dfc1;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
 
   /* Större rubrik på större skärmar */
   .hero h1 {
