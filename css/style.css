@@ -167,6 +167,63 @@ nav a[aria-current="page"] {
 .about h1 {
   margin-top: 0;
 }
+
+/* Sektion som beskriver bildredigeringen */
+.process {
+  padding: 4rem 5%;
+  background: #e7efe8;
+}
+
+/* Rubrik och introduktion i process-sektionen */
+.process h2,
+.process-intro {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+/* Avstånd under huvudrubriken */
+.process h2 {
+  margin-top: 0;
+}
+
+/* Läsbarare radavstånd i introduktionstexten */
+.process-intro {
+  line-height: 1.6;
+}
+
+/*
+  Skapar automatiskt så många kortkolumner som får plats.
+  Varje kort är minst 230 px brett.
+*/
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto 0;
+}
+
+/* Varje kort får vit bakgrund, avstånd och en grön accent */
+.process-card {
+  padding: 1.5rem;
+  background: #ffffff;
+  border-top: 4px solid #426b50;
+  box-shadow: 0 4px 12px rgba(31, 41, 51, 0.12);
+}
+
+/* Kortens rubriker */
+.process-card h3 {
+  margin-top: 0;
+  color: #426b50;
+}
+
+/* Kortens brödtext */
+.process-card p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
 /* Regler för skärmar som är minst 650 px breda */
 @media (min-width: 650px) {
   /* Logga och meny hamnar på samma rad */
