@@ -434,7 +434,7 @@ nav a[aria-current="page"] {
   /* Texten får en bestämd maximal bredd */
   .hero-content {
     left: 8%;
-    max-width: 520px;
+    max-width: 620px;
     padding: 2rem;
   }
 
@@ -462,7 +462,7 @@ nav a[aria-current="page"] {
   .about-content {
     flex: 1;
   }
-}
+
 
   
   /* Introduktion på Bildredigering-sidan */
