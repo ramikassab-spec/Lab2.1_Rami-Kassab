@@ -43,6 +43,10 @@ Fotografierna används i JPEG-format, porträttet i PNG med transparens och logo
 - Alla tre sidor har kontrollerats vid mobilbredden 390 px.
 - Webbplatsens utseende har även granskats på större skärm.
 
+## Publicerad webbplats
+
+[Besök Visuell](https://ramikassab-spec.github.io/Lab2.1_Rami-Kassab/)
+
 ## Skapare
 
 Rami Kassab  
